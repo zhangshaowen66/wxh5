@@ -10,7 +10,6 @@ if(process.env.VUE_APP_MODE=='development'){
         },
     }
 }
-console.log(process.env.VUE_APP_MODE, 'proxy')
 module.exports = {
     lintOnSave: false,
     devServer: {

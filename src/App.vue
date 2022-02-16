@@ -1,12 +1,13 @@
 <template>
     <div id="app">
         <router-view/>
+        <Navbar/>
     </div>
 </template>
 
 <script>
 
-
+import Navbar from './components/Navbar.vue'
 export default {
     name: 'app',
     data() {
@@ -15,6 +16,7 @@ export default {
         }
     },
     components: {
+        Navbar
     },
     watch: {
         '$route' : {
@@ -53,19 +55,16 @@ export default {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-width: 1200px;
-    background: #F0F2F5;
+    max-width: 750px;
+    background: #ffffff;
     position: absolute;
     font-size: 14px;
     height: 100%;
     width: 100%;
     overflow: auto;
-    /* -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none; */
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .actives {

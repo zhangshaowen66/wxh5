@@ -9,6 +9,7 @@ import moment from 'vue-moment-filter'
 import axios from 'axios'
 import './assets/less/publics.less'
 import 'default-passive-events'
+import 'lib-flexible'
 Vue.config.productionTip = false
 Vue.prototype.$message = message;
 Vue.prototype.$hasLimits = (str) => {
